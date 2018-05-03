@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file>C:/Users/A1P9/Desktop/importar/tetera.FBX</file>
+        <file>C:/Users/A1P9/Desktop/importar/texdifusa.png</file>
+        <file>C:/Users/A1P9/Desktop/importar/texespecular.png</file>
+        <file>C:/Users/A1P9/Desktop/importar/texnormal.png</file>
+        <file>C:/Users/A1P9/Desktop/importar/tetera.obj</file>
+        <file>C:/Users/A1P9/Desktop/importar/normapguapo.png</file>
+        <file>C:/Users/A1P9/Desktop/importar/donut.obj</file>
+    </qresource>
+</RCC>
