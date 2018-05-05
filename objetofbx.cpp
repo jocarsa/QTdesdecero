@@ -38,19 +38,22 @@ ObjetoFBX::ObjetoFBX(Qt3DCore::QNode *parent)
     // Le pongo el URL de la malla que voy a usar
     mesh()->setSource(QUrl(QStringLiteral("qrc:/C:/Users/A1P9/Desktop/importar/tetera.obj")));
     // Le pongo por defecto una escala de 0.03
-    transform()->setScale(0.03f);
+    transform()->setScale(0.1f);
     // Le añado una textura
     m_diffuseTexture->addTextureImage(m_diffuseTextureImage);
     // Textura normal
     m_normalTexture->addTextureImage(m_normalTextureImage);
     // Textura especular
     m_specularTexture->addTextureImage(m_specularTextureImage);
+    // Quiero añadir color ambiental
+    m_material->setAmbient(QColor(0,255,0));
 
     setNormalTextureSource();
     setDiffuseTextureSource();
     setSpecularTextureSource();
-    m_material->setShininess(10.0f);
+    m_material->setShininess(30.0f);
     addComponent(m_material);
+    m_material->setTextureScale(0.2f);
 }
 
 ObjetoFBX::~ObjetoFBX()
